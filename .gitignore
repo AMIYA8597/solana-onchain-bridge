@@ -1,0 +1,111 @@
+# Blockchain Project .gitignore
+
+# Node.js Dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnp
+.pnp.js
+.npm
+.yarn-integrity
+yarn.lock
+package-lock.json
+
+# Rust Dependencies and Build
+/target/
+**/*.rs.bk
+Cargo.lock
+.cargo-ok
+
+# Other Dependencies
+vendor/
+packages/
+composer.lock
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+.secret
+
+# Blockchain specific
+artifacts/
+cache/
+typechain/
+typechain-types/
+deployments/
+.openzeppelin/
+
+# Smart contract compilation artifacts (Hardhat/Truffle/Foundry)
+artifacts/
+cache/
+forge-cache/
+forge-artifacts/
+coverage/
+coverage.json
+typechain/
+
+# Keys, mnemonics and other secrets
+*.key
+*.pem
+mnemonic.txt
+private-key.txt
+wallet.json
+
+# Logs
+logs
+*.log
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+coverage/
+.nyc_output/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+
+# Rust specific testing
+**/*.profraw
+
+# wasm
+*.wasm
+wasm-pack.log
+
+# Misc
+.DS_Store
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+desktop.ini

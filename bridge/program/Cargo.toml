@@ -1,0 +1,18 @@
+[package]
+name = "raydium-bridge"
+version = "0.1.0"
+edition = "2021"
+description = "Solana program for bridging tokens using Raydium"
+authors = ["Your Name <your.email@example.com>"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.16.0"
+thiserror = "1.0.40"
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+arrayref = "0.3.7"
+
+[lib]
+crate-type = ["cdylib", "lib"]
